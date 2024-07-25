@@ -44,10 +44,10 @@ def key_pressed():
     # when you press the space bar. Run the program to test it.
 
     # 10. Increment the x and y variables of the 2 eye variables by 5:
-    #     left_eye.x += 5
+    # left_eye.x += 5
     
     # 11. Call the .draw() method for both eye variables.
-
+    LASERBEAM.draw()
 
 if __name__ == '__main__':
     window = turtle.Screen()
@@ -61,16 +61,17 @@ if __name__ == '__main__':
     
     # 2. Call the set_background() function with your variable inside of the parenthesis
     #    for example, set_background(bg_image)
-
+    set_background('bigEyedCat2.gif')
     # 3. Make a new turtle
 
+    myturtle = turtle
     # 4. Set the turtle color and pen color to red (or any color you want)
     #    using .color('red', 'red')
-
+    turtle.color('red', 'red')
     # 5. Set the turtle width to 0 so no outlines are drawn
-
+    turtle.width(0)
     # 6. Set the turtle speed to 0 (fastest)
-
+    turtle.speed(0)
     # 7. Run the program and click on one of the cat's eyes. 
     #    The x,y position of the eye will be printed at the bottom of your
     #    processing window.

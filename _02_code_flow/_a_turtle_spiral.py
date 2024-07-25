@@ -22,13 +22,13 @@ if __name__ == '__main__':
     # Set your turtle's color using .color('green')
     turtleme.color('green')
     # Use a loop to repeat a the code below 50 times
-    for i in range(100):
+    for i in range(500):
         # Set the turtle color to a random color
         turtleme.color(get_random_color())
         # Move the turtle (5*i) pixels. 'i' is the loop variable
-        turtleme.forward(2*i)
+        turtleme.forward(1*i)
         # Turn the turtle (360/7) degrees to the right
-        turtleme.right(360/2)
+        turtleme.right(360/7)
         # Change the turtle width to 'i' (the loop variable)
         turtleme.width(i)
         # Check the pattern against the picture in the recipe. If it matches, you are done!
