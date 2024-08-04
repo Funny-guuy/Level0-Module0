@@ -12,7 +12,7 @@ if __name__ == '__main__':
     # 2. Print out the random variable that you made in step #1
     print(random_num)
     # 3. Code a for loop to run steps 4-10, 10 times
-    for i in range(1):
+    for i in range(10):
 
         if __name__ == '__main__':
             window = Tk()

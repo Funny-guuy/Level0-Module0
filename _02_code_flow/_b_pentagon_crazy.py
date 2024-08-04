@@ -29,27 +29,23 @@ if __name__ == '__main__':
     # Set the turtle width to 1
     turtleme.width(1)
     # Create a variable to hold the number of sides in a pentagon
-    sides = 2.6
+    sides = 4
     # Create a variable to be the angle of 360 divided by the sides variable
     angle = 360 / sides
     # Use a for loop to repeat ALL the following lines of code 360 times. 
     for i in range(360000000):
         # If the loop variable (i) is equal to 100, set the turtle width to 2
-        if i == 25:
+        if i == 100:
             turtleme.width(2)
         # If the loop variable (i) is equal to 200, set the turtle width to 3
-        if i == 50:
-            turtleme.width(4)
-        if i == 75:
-            turtleme.width(7)
-        # If the loop variable (i) is equal to 200, set the turtle width to 3
-        if i == 100:
-            turtleme.width(10)
+        if i == 200:
+            turtleme.width(3)
+
         # Use the get_next_color function to set the turtle pencolor,
         # *hint .pencolor(get_next_color(i))
         turtleme.pencolor(get_next_color(i))
         # Move the turtle forward by the loop variable, *hint .forward(i)
-        turtleme.forward(100)
+        turtleme.forward(i)
         # Turn the turtle to the right by the angle variable + 1
         turtleme.right(angle + sides)
     # Hide your turtle so you can see the pattern.
